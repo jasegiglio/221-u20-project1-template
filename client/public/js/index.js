@@ -9,3 +9,12 @@ function checkKeyPress(e) {
     goToLocation('/feed');
   }
 }
+
+function clicks() {
+ 
+    goToLocation('/feed');
+  
+}
+document.addEventListener("keypress" , checkKeyPress);
+document.addEventListener("click" , clicks);
+
