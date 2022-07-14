@@ -17,10 +17,48 @@ let stories =[storyOne,storyTwo,storyThree];
 function displayItem(){
     for(var i= 0; i < stories.length; i++){
         let item = stories[i];
-        document.getElementById("newsfeed").innerHTML += "<img class='feedImage' src='" + item.imageUrl + "'>\n<p><a href = '" + item.linkURL + "'>" + item.title + "</a><br>" + item.body + "<br><hr></p><br>";
+        document.getElementById("horizontal").innerHTML += "<div class = 'stories'><img class='feedImage' src='" + item.imageUrl + "'>\n<p><a href = '" + item.linkURL + "'>" + item.title + "</a><br>" + item.body + "<br><hr></p></div>";
 
     }
 }
 
+function displayItem(){
+    for(var i= 0; i < stories.length; i++){
+        let item = stories[i];
+        document.getElementById("newsfeed").innerHTML += "<img class='feedImage' src='" + item.imageUrl + "'>\n<p><a href = '" + item.linkURL + "'>" + item.title + "</a><br>" + item.body + "<br><hr></p><hr>";
+
+    }
+}
+
+
+
 window.addEventListener('load', displayItem);
 
+function nasa(name, body, linkURL, imageUrl){
+    this.name = name;
+    this.body = body;
+    this.linkURL = linkURL;
+    this.imageUrl = imageUrl;
+}
+
+let displayNasacontroller = function(id, story){
+    document.getElementById((id)).innerHTML +=
+    "<div> <h1>" + story.name + "</h1> <img class = storyImage src = " + story.imageUrl + "></img> <br/ ><p>" + story.body + "</p><a href = " + story.linkURL + ">Get them here!</a> <hr/> </div>";
+}
+
+
+
+
+
+
+window.addEventListener("load", ()=> {
+    for(var i = 0; i < story.length; i++){
+        if(i == 0) 
+            displayNasacontroller("storyOne", stories[i]);
+        if(i == 1) 
+            displayNasacontroller("storyTwo", stories[i]);
+        if(i == 2) 
+            displayNasacontroller("storyThree", stories[i]);
+    
+    }
+});

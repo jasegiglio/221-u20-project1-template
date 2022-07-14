@@ -23,7 +23,7 @@ main {
 footer {
 	position: relative;
 	left: 0px;
-  bottom: 0px;
+  	bottom: 0px;
 	width: 100%;
 	background-color: rgba(251, 227, 172);
 	text-align: center;
@@ -36,7 +36,7 @@ footer {
 	top: 10px;
 }
 
-a {
+a{
 	color: blue;
 	text-decoration: none;
 }
@@ -56,4 +56,47 @@ a {
 .feedImage {
 	max-width: 150px;
 	max-height: 150px;
+}
+
+#stories {
+	text-align:center ;
+	max-width: 700px;
+}
+
+#storyOne {
+	float: left;
+		float: left;
+	width: 22.5%;
+	margin-left: 2.5%;
+	color: rgb(223, 13, 41);
+}
+
+#storyTwo {
+	float: left;
+		float: left;
+	width: 22.5%;
+	margin-left: 2.5%;
+	color: rgb(235, 88, 43);
+}
+
+#storyThree {
+	float: right;
+		float: right;
+	width: 22.5%;
+	margin-right: 2.5%;
+	color: rgb(25, 144, 126);
+}
+
+#horizontal {
+	width: 100%;
+	height: auto;
+    overflow-x:scroll;
+}
+
+.stories {
+	width: 20%;
+	display:inline-block;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+
 }
